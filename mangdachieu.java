@@ -14,7 +14,8 @@ import java.util.Scanner;
 public class mangdachieu {
     public static void main(String[] args){
     
-        int x, y, z;
+        int x, y, z, number, sum=0;
+        float average;
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("nhap hang so phan tu x: ");
@@ -29,7 +30,8 @@ public class mangdachieu {
             for(int j = 0; j < y; j++){
                 for(int l=0; l<z; l++){
             System.out.println("nhap phan tu thu[" + i + "," + j + "," + l +":");
-            A[i][j][l]= scanner.nextInt();
+            A[i][j][l]= number= scanner.nextInt();
+            sum += number;
             }}}
             System.out.println("Mảng vừa nhập: ");
         for (int i = 0; i < x; i++) {
@@ -38,8 +40,10 @@ public class mangdachieu {
             System.out.print(A[i][j][l] + "\t");
         }
         }
+            System.out.println("\n");
         }
-        System.out.println("\n");  
+        average=(float)sum/(x*y*z);
+        System.out.println("trung bình cộng: " + average);  
     }
     
 }
