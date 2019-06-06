@@ -42,8 +42,9 @@ public class mangdachieu {
         }
             System.out.println("\n");
         }
+        System.out.println("tong cua mang = "+sum);
         average=(float)sum/(x*y*z);
-        System.out.println("trung bình cộng: " + average);  
+        System.out.println("trung bình cộng: " +sum + "/" +(x*y*z)+ "=" +average);  
     }
     
 }
