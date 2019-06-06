@@ -12,7 +12,8 @@ import java.util.*;
 public class mangmotchieu {
     
     public static void main(String[] args){
-    int A;
+    int A, sum=0 , number;
+    float average;
     Scanner scanner = new Scanner(System.in);
     System.out.println("nhap vao so phan tu cua mang: ");
     A = scanner.nextInt();
@@ -20,10 +21,15 @@ public class mangmotchieu {
     
     for(int i=0; i< A; i++){
     System.out.println("nhap vao phan tu thu " +i+": ");
-    mang[i] = scanner.nextInt();
+    mang[i] = number = scanner.nextInt();     
+    sum += number;
     }
     for(int i=0; i<A; i++){
     System.out.println("phan tu thu" + i +": " +mang[i]);
     }
+
+
+    average = (float)sum/A;
+    System.out.println("Trung Bình Cộng: " + average);
     }
 }
